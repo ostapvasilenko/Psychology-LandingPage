@@ -1,0 +1,33 @@
+.hero {
+    height: 730px;
+    max-width: 100%;
+
+    &__info {
+
+        &_title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 61px;
+            color: #121212;
+            max-width: 470px;
+        }
+
+        &_text {
+            font-size: 26px;
+            line-height: 32px;
+            color: #121212;
+            margin-top: 36px;
+        }
+
+        &_btn {
+            font-weight: 500;
+            font-size: 30px;
+            color: #FFFFFF;
+            background: #BBBCDF;
+            border-radius: 10px;
+            padding: 20px 84px;
+            border: none;
+            margin-top: 70px;
+        }
+    }
+}
