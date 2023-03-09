@@ -1,4 +1,145 @@
-.header{
-    background-color: red;
-    color: #fff;
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        margin: 0px 216px;
+        max-width: 100%;
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                :hover {
+                    color: #BBBCDF;
+                    transition: 0.3s;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #121212;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        cursor: pointer;
+        left: 100%;
+        top: 0%;
+        display: none;
+    }
+
+    .menu-btn span {
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(1) {
+        width: 20px;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 8px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 8px);
+    }
+
+    /* Changing the hamburger icon when the menu is open */
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+
+    /* Menu that will appear */
+    .menu {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background: #ffffff;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        text-align: center;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        list-style-type: none;
+        margin: 15px 0px;
+
+        :hover {
+            color: #BBBCDF;
+            transition: 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #121212;
+            transition: 0.3s;
+        }
+    }
+
+    @media screen and(max-width:1100px) {
+        .container {
+            margin: 0px 116px;
+        }
+    }
+
+    @media screen and(max-width:900px) {
+        .container {
+            margin: 0px 76px;
+        }
+    }
+
+    @media screen and(max-width:767px) {
+        .menu-btn {
+            display: block;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+    }
+
 }

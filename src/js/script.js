@@ -1,10 +1,7 @@
-let slider = $(document).ready(function () {
-  $('.your-class').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
-    infinite: true
-  });
-});
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
 
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+})
