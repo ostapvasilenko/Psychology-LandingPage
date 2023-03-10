@@ -2,12 +2,15 @@
     height: 70px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+
 
     &__menu {
+        display: flex;
+        justify-content: center;
+
         ul {
             display: flex;
-            justify-content: space-between;
 
             li {
                 :hover {
@@ -22,6 +25,7 @@
                     line-height: 24px;
                     color: #121212;
                     transition: 0.3s;
+                    padding: 0px 30px;
                 }
             }
         }
@@ -47,7 +51,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #222222;
+        background-color: #FAFAFA;
         transition: all 0.5s;
     }
 
@@ -121,9 +125,26 @@
         }
     }
 
-    @media screen and(max-width:900px) {
+    @media screen and(max-width:1034px) {
+        .container {
+            margin: 0px 40px;
+        }
+    }
+
+    @media screen and(max-width:992px) {
         .container {
             margin: 0px 76px;
+        }
+
+        &__menu {
+            ul{
+                li{
+                    a{
+                        padding: 0px 15px;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 
