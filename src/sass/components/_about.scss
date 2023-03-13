@@ -5,13 +5,17 @@
 
     &__img {
         padding-right: 0;
-
-        img {
             width: 100%;
-        }
+            height: 830px;
+            background-image: url('../img/about.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        
     }
 
     &__info {
+        
         h2 {
             font-weight: 700;
             font-size: 50px;
@@ -21,12 +25,14 @@
         &_block {
             display: flex;
             margin-top: 36px;
+
             p {
                 font-size: 26px;
                 line-height: 32px;
                 color: #121212;
             }
-            img{
+
+            img {
                 height: 24px;
                 width: 32px;
                 margin-top: 8px;
@@ -36,5 +42,11 @@
         }
     }
 
-    &__#
+    #about__position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+        padding-right: 50px; 
+    }
 }
