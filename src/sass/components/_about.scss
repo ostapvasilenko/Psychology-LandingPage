@@ -1,21 +1,21 @@
 .about {
-    .container {
-        padding-right: 0px;
-    }
+    min-width: 100%;
 
     &__img {
         padding-right: 0;
-            width: 100%;
-            height: 830px;
-            background-image: url('../img/about.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        
+        max-width: 720px;
+        max-height: 838px;
+        height: 850px;
+        width: 100%;
+        background-image: url('../img/about.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 
     &__info {
-        
+
         h2 {
             font-weight: 700;
             font-size: 50px;
@@ -47,6 +47,101 @@
         justify-content: center;
         align-items: center;
         padding-left: 80px;
-        padding-right: 50px; 
+        padding-right: 50px;
+    }
+
+    @media screen and(max-width:1200px) {
+       .col-sm-6{
+        padding-right: 0;
+       }
+        &__info {
+
+            h2 {
+                font-size: 40px;
+            }
+
+            &_block {
+                margin-top: 26px;
+
+                p {
+                    font-size: 24px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+
+        #about__position {
+            padding-left: 80px;
+            padding-right: 10px;
+        }
+    }
+    @media screen and(max-width:992px) {
+
+        &__img{
+            height: 700px;
+        }
+        &__info {
+
+            h2 {
+                font-size: 34px;
+            }
+
+            &_block {
+                margin-top: 16px;
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.2em;
+                }
+
+                img {
+                    height: 14px;
+                    width: 19px;
+                }
+            }
+        }
+
+        #about__position {
+            padding-left: 40px;
+            padding-right: 10px;
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__img{
+            height: 700px;
+        }
+        &__info {
+
+            h2 {
+                font-size: 30px;
+            }
+
+            &_block {
+                margin-top: 16px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.2em;
+                }
+
+                img {
+                    height: 14px;
+                    width: 19px;
+                }
+            }
+        }
+
+        #about__position {
+            padding-left: 16px;
+            padding-right: 10px;
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__img{
+            padding-right: 24px;
+            
+        }
     }
 }

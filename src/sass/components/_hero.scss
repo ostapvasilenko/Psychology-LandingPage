@@ -78,6 +78,7 @@
             bottom: 76px;
 
             &_title {
+                font-size: 30px;
                 max-width: none;
                 text-align: center;
             }
@@ -105,8 +106,9 @@
             bottom: 50px;
 
             &_title {
-                font-size: 17px;
+                font-size: 20px;
                 line-height: 1.2em;
+                max-width: 100%;
             }
 
             &_text {
@@ -125,6 +127,10 @@
     @media screen and(max-width:400px) {
         &__info {
             bottom: 20px;
+
+            &_title{
+                font-size: 17px;
+            }
         }
     }
 }
