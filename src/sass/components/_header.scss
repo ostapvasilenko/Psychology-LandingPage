@@ -35,12 +35,12 @@
     .menu-btn {
         width: 30px;
         height: 30px;
-        position: relative;
+        position: fixed;
         z-index: 3;
         overflow: hidden;
         cursor: pointer;
-        left: 100%;
-        top: 0%;
+        left: 75%;
+        top: 30px;
         display: none;
     }
 
