@@ -53,7 +53,7 @@
     }
 
     @media screen and(max-width:1200px) {
-        &__info{
+        &__info {
             p {
                 font-size: 22px;
                 padding: 0px 7px;
@@ -65,13 +65,14 @@
         h2 {
             font-size: 40px;
         }
-        &__info{
+
+        &__info {
             p {
                 font-size: 16px;
                 text-align: start;
                 padding: 0px;
                 margin-top: 50px;
-    
+
                 b {
                     font-size: 30px;
                 }
@@ -85,18 +86,21 @@
             margin-bottom: 50px;
             margin-top: 80px;
         }
-        &__info{
+
+        &__info {
             margin-bottom: 50px;
+
             img {
                 display: block;
             }
-    
+
             p {
                 font-size: 20px;
                 margin-top: 0;
             }
         }
-        button{
+
+        button {
             margin-top: 0;
         }
     }
@@ -107,22 +111,25 @@
             margin-top: 60px;
             margin-bottom: 40px;
         }
-        &__info{
+
+        &__info {
             margin-bottom: 30px;
+
             p {
                 font-size: 16px;
                 line-height: 26px;
-    
+
                 b {
                     font-size: 28px;
                 }
             }
-    
+
             img {
                 width: 18px;
                 height: 14px;
             }
         }
+
         button {
             font-size: 18px;
             padding: 12px 46px;
