@@ -1,5 +1,4 @@
 .services {
-
     h2 {
         font-weight: 700;
         font-size: 50px;
@@ -66,4 +65,148 @@
             margin-bottom: 8px;
         }
     }
+
+    @media screen and (max-width:1400px) {
+        &__container {
+            grid-gap: 60px;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        &__container {
+
+            &_card {
+                padding: 26px 20px 20px;
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                h3 {
+                    font-size: 38px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:992px) {
+
+        h2 {
+            font-size: 40px;
+        }
+
+        &__container {
+            grid-gap: 30px;
+
+            &_card {
+                padding: 16px 10px 20px;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:767px) {
+    
+        &__container {
+            margin-top: 50px;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            &_card {
+                padding: 26px 20px 35px;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                }
+
+                h3 {
+                    font-size: 32px;
+                }
+                div{
+                    margin: 0px 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:575px) {
+        h2 {
+            font-size: 27px;
+        }
+        &__container {
+            margin-top: 40px;
+            grid-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            &_card {
+                padding: 12px 14px 12px;
+
+                h4 {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+
+                h3 {
+                    font-size: 16px;
+                    margin: 10px 0px;
+                }
+                div{
+                    margin: 0px 50px;
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-top: 12px;
+                }
+            }
+        }
+        #card_first {
+            h4 {
+                margin-top: 8px;
+                margin-bottom: 10px;
+                line-height: 1.2em;
+            }
+        }
+    }
+    @media screen and(max-width:421px) {
+        #card_first {
+            h4 {
+                margin-top: -8px;
+                margin-bottom: 10px;
+                line-height: 1.2em;
+            }
+        }
+        &__container {
+            &_card {
+                h4{
+                    
+                }
+                div{
+                    margin: 0px 30px;
+                }
+            }
+        }
+    }
+
 }
