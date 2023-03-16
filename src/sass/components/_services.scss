@@ -66,6 +66,59 @@
         }
     }
 
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        
+        .modal-content {
+          background-color: #fff;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 60%;
+          position: relative;
+          
+          h3 {
+            margin-top: 0;
+          }
+          
+          .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #aaa;
+          }
+          
+          .order-btn {
+            background-color: #9da1d1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 150px;
+            margin: 0px auto;
+            
+          }
+          .order-btn:hover{
+            background-color:rgb(191, 190, 231);
+          }
+        }
+    }
+
     @media screen and (max-width:1400px) {
         &__container {
             grid-gap: 60px;
@@ -218,52 +271,4 @@
             }
         }
     }
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-        
-        .modal-content {
-          background-color: #fff;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 60%;
-          position: relative;
-          
-          h3 {
-            margin-top: 0;
-          }
-          
-          .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            font-size: 30px;
-            cursor: pointer;
-            color: #aaa;
-          }
-          
-          .order-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-          }
-        }
-    }
-
 }
